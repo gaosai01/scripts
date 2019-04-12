@@ -26,7 +26,7 @@ function installMaven() {
 
 # install jdk
 java_version=`java -version 2>&1 |awk 'NR==1{ gsub(/"/,""); print $3 }'|awk -F '.' '{print $2}'`
-if [ $java_version != 8 ];then
+if [ "$java_version" != "8" ];then
     installJdk
     echo 'jdk1.8 install successfully'
 else
