@@ -43,8 +43,8 @@ else
 fi
 
 source ~/.bash_profile
-
 # Maven Aliyun Mirror
+mdkir ~/.m2
 mv ~/.m2/settings.xml ~/.m2/settings.xml.default
 curl -s -S -L https://raw.githubusercontent.com/gaosai01/scripts/master/install/java/settings.xml > ~/.m2/settings.xml
 echo 'set aliyun mirror'
