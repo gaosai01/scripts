@@ -4,7 +4,7 @@
 function installJdk() {
     rm -rf jdk1.8.0_201
     rm -f jdk-8u201-linux-x64.tar.gz
-    wget https://raw.githubusercontent.com/gaosai01/scripts/master/install/java/jdk-8u201-linux-x64.tar.gz
+    wget https://github.com/gaosai01/scripts/raw/master/install/java/jdk-8u201-linux-x64.tar.gz
     tar -zxf jdk-8u201-linux-x64.tar.gz
     mv -f jdk1.8.0_201 /usr/local/jdk1.8.0_201
     rm -f jdk-8u201-linux-x64.tar.gz
@@ -16,7 +16,7 @@ function installJdk() {
 function installMaven() {
     rm -rf apache-maven-3.6.0
     rm -f apache-maven-3.6.0-bin.tar.gz
-    wget https://raw.githubusercontent.com/gaosai01/scripts/master/install/java/apache-maven-3.6.0-bin.tar.gz
+    wget https://github.com/gaosai01/scripts/raw/master/install/java/apache-maven-3.6.0-bin.tar.gz
     tar -zxf apache-maven-3.6.0-bin.tar.gz
     mv -f apache-maven-3.6.0 /usr/local/apache-maven-3.6.0
     rm -f apache-maven-3.6.0-bin.tar.gz
